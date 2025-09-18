@@ -50,7 +50,6 @@ class Module:
             The name and `Parameter` of each ancestor parameter.
         """
         params_list = []
-        
         for name, param in self._parameters.items():
             params_list.append((name, param))
 
@@ -59,7 +58,6 @@ class Module:
             for child_name, child_param in child_params:
                 final_name = f"{module_name}.{child_name}"
                 params_list.append((final_name, child_param))
-        
         return params_list
 
 
