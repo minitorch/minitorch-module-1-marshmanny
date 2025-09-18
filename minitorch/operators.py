@@ -12,7 +12,7 @@ from typing import Callable, Iterable
 
 def mul(x: float, y: float) -> float:
     "$f(x, y) = x * y$"
-    raise NotImplementedError("Need to include this file from past assignment.")
+    return x * y
 
 
 def id(x: float) -> float:
